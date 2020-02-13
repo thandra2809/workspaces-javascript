@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+# file: ~/.gitignore_global
+.DS_Store
+.idea
