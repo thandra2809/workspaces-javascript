@@ -10,3 +10,5 @@ let arr4 = new Array(10);
 let arr5 = [,,,,,,,,];
 
 let arr6 = new Array(1,2,3,4,true);
+
+console.log(arr1);
