@@ -1,4 +1,7 @@
-var user1 = {name : "nerd", org: "dev"};
-var user2 = {name : "nerd", org: "dev"};
-var eq = user1 == user2;
-alert(eq); // gives false
+let user1 = {name : "nerd", org: "dev"};
+let user2 = {name : "nerd", org: "dev"};
+let eq = user1 == user2;
+console.log(eq);
+
+
+console.log(user1===user2);
