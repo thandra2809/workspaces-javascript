@@ -1,0 +1,11 @@
+{
+  "name": "3-max-typescript",
+  "version": "1.0.0",
+  "description": "type script practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
