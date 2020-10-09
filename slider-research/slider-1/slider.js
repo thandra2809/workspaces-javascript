@@ -21,7 +21,9 @@ function modifyOffset() {
 
 function modifyInputs() {
 
+    debugger;
     var inputs = document.getElementsByTagName("input");
+    debugger;
     for (var i = 0; i < inputs.length; i++) {
         if (inputs[i].getAttribute("type") == "range") {
             inputs[i].onchange = modifyOffset;

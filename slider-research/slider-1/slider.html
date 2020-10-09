@@ -8,9 +8,12 @@
 <body>
 
 <form>
-    <input type="range" name="foo" min="0" max="100" style="width: 300px;">
+    <input type="range" name="foo" min="0" max="10" style="width: 300px;">
     <output for="foo" onforminput="value = foo.valueAsNumber;"></output>
+
+    <div id="slider" style="margin:50px"></div>
     <script src="slider.js" ></script>
+    <script src="slider-tooltip.js" ></script>
 </form>
 
 
