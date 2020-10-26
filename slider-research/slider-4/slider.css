@@ -1,0 +1,189 @@
+body {
+    margin: 100px 50px;
+    font-family: verdana;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* General Rules For Range Slider */
+.custom-rangeslider {
+    position: relative;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.custom-rangeInput {
+    width: 300px;
+    background: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    height: 20px;
+}
+.custom-rangeInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    background-color: #21324f;
+    outline: 2px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -webkit-grab;
+    margin-top: -8px;
+}
+.custom-rangeInput::-webkit-slider-thumb:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+.custom-rangeInput::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    background-color: #21324f;
+    outline: 2px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -webkit-grab;
+}
+.custom-rangeInput::-moz-range-thumb:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+.custom-rangeInput::-ms-thumb {
+    appearance: none;
+    box-sizing: border-box;
+    background-color: #21324f;
+    outline: 2px solid #ffffff;
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: move;
+    /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -webkit-grab;
+    margin: auto;
+}
+.custom-rangeInput::-ms-thumb:active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+}
+.custom-rangeInput::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    height: 5px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: grey;
+}
+.custom-rangeInput::-moz-range-track {
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    height: 5px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: grey;
+}
+.custom-rangeInput::-ms-track {
+    appearance: none;
+    box-sizing: border-box;
+    height: 5px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: grey;
+    color: transparent;
+    border: none;
+    outline: none;
+}
+.custom-rangeInput:focus, .custom-rangeInput:active {
+    outline: none;
+}
+.custom-rangeInput::-ms-tooltip {
+    display: none;
+}
+
+.custom-rangeslider__tooltip {
+    line-height: 20px;
+    position: absolute;
+    height: 20px;
+    width: 40px;
+    background-color: #FFF;
+    padding: 3px 3px;
+    border: 1px #33ccff solid;
+    top: -40px;
+    left: 0;
+    text-align: center;
+    -webkit-transform: translate(-26%, 0);
+    transform: translate(-26%, 0);
+    border-radius: 3px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+.custom-rangeslider__tooltip:after {
+    display: block;
+    content: ' ';
+    background: #FFF;
+    position: absolute;
+    border: 1px #33ccff solid;
+    border-top: 0;
+    border-left: 0;
+    width: 10px;
+    height: 10px;
+    left: calc(50% - 6px);
+    bottom: -6px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-rangeslider__label {
+    width: 300px;
+    display: block;
+}
+.custom-rangeslider__label span {
+    display: block;
+}
+.custom-rangeslider__label-min {
+    float: left;
+}
+.custom-rangeslider__label-max {
+
+    float: right;
+}
+.custom-rangeslider__label:after {
+    content: "";
+    display: table;
+    clear: both;
+}
